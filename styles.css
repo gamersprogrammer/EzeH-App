@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.header > .text{
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,5 +40,30 @@ textarea {
 }
 form{
     margin: 20px;
-    
+}
+#nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+  
+#navbar {
+    margin-right: 10px;
+}
+#nav-links li{
+    margin-top: 10px;
+    margin-left: -80px;
+}
+#nav-links li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#nav-links li a:hover{
+    transition: all ease-in-out .3s;
+    color: #007bff;
+}
+#nav-links {
+    display: none;
 }
