@@ -60,4 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
             addNoteToContainer(note.text, note.timestamp);
         });
     }
+
+    // Toggle navigation menu
+    const nav = document.getElementById('nav-links');
+    const bar = document.querySelector('.fa-bars'); // Selecting the element with class .fa-bars
+
+    bar.addEventListener('click', () => {
+        nav.style.display = (nav.style.display === "block") ? "none" : "block";
+    });
 });
